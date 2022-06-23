@@ -1,0 +1,31 @@
+h1 {
+  text-align: center;
+}
+
+.frame-wrapper {
+  text-align: center;
+  display: flex;
+  position: relative;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.add-todo-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+.add-button-wrapper button {
+  justify-content: flex-end;
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+.todos-wrapper {
+  border: 1px solid red;
+}
