@@ -1,27 +1,30 @@
 const addTaskBtn = document.querySelector(".add-btn");
 const todosWrapper = document.querySelector(".todos-wrapper");
 const taskDescriptionInput = document.querySelector(".todos-description");
-var deleteTodos = document.querySelector(".btn-delete");
+const deleteTodos = document.querySelector(".btn-delete");
 
 var idTodos = 0;
 
-const addTask = (id) => {
+const addTask = () => {
   return `
-    <div class="todo-item" id="${id}">
+    <div class="todo-item" onclick="completeTask(event)" id="${idTodos}">
         <div class="description">${taskDescriptionInput.value}</div>
         <div class="buttons">
-            <button class="btn-delete" onclick="deleteElement()">Delete</button>
+            <input  "class="btn-complete" type="checkbox">
+            <button class="btn-delete"  onclick="deleteTask(event) "id="${idTodos}" >Delete</button>
         </div>
     </div>
     `;
 };
 
 const newElement = () => {
-  todosWrapper.innerHTML += addTask(idTodos);
+  taskDescriptionInput.value == ""
+    ? alert("Поле не должно быть пустым!")
+    : (todosWrapper.innerHTML += addTask(idTodos));
   taskDescriptionInput.value = "";
   idTodos++;
 };
 
-const deleteElement = () => {
-  alert("123");
+const deleteTask = (event) => {
+  document.getElementById(event.target.id).remove();
 };

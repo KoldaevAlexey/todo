@@ -12,13 +12,12 @@ h2 {
 }
 
 .frame-wrapper {
-  text-align: center;
   display: flex;
-  position: relative;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  border: 1px solid red;
 }
 
 .add-todo-wrapper {
@@ -28,20 +27,42 @@ h2 {
   background-color: burlywood;
 }
 
-.add-button-wrapper button {
+.add-button-wrapper {
   justify-content: flex-end;
+  display: flex;
   cursor: pointer;
   background-color: hotpink;
   border-radius: 10%;
   border: 1px solid black;
 }
 
-.todos-wrapper {
-  border: 1px solid red;
+.todo-item {
   display: flex;
-  flex-flow: column;
+  width: 600px;
+  min-height: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid red;
 }
 
-.btn-delete {
+.description {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.buttons {
   color: red;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.buttons button {
+  height: 30px;
+  width: 90px;
+}
+
+.on {
+  background-color: black;
 }
