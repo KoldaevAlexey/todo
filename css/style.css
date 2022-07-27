@@ -3,17 +3,16 @@
 }
 
 body {
-  background: url("../bg/bg.png") no-repeat center;
   background-color: #e5e5e5;
 }
 
 .container {
-  margin: 0 auto;
-  width: 800px;
+  background: url("../bg/bg.png") no-repeat center;
+  margin: 150px auto;
+  width: 900px;
 }
 
 .mytask_icon {
-  margin-top: 20px;
   text-align: center;
 }
 
@@ -27,7 +26,11 @@ body {
 
 h2 {
   position: relative;
-  top: 20px;
+  bottom: 100px;
   text-align: center;
   font-family: "Cormorant SC", serif;
+}
+
+.todos-wrapper {
+  display: block;
 }
