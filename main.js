@@ -1,6 +1,6 @@
-const addTaskBtn = document.querySelector(".add-btn"),
+const addTaskBtn = document.querySelector(".btn-success"),
   todosWrapper = document.querySelector(".todos-wrapper"),
-  taskDescriptionInput = document.querySelector(".todos-description"),
+  taskDescriptionInput = document.querySelector(".form-control"),
   deleteTodos = document.querySelector(".dlt"),
   chbox = document.getElementsByClassName(".btn-complete");
 

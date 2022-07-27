@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../bg/bg.png") no-repeat center;
+  background-color: #e5e5e5;
+}
+
+.container {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.mytask_icon {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.frame-wrapper {
+  display: block;
+}
+
+.input-group {
+  margin-top: 50px;
+}
+
+h2 {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  font-family: "Cormorant SC", serif;
+}
